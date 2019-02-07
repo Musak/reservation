@@ -24,7 +24,7 @@ public class RoomServicesApplication {
                 .apis(RequestHandlerSelectors.basePackage("com.musak.services.room"))
                 .paths(any()).build().apiInfo(new ApiInfo("Room Services",
                         "A set of services to provide data access to rooms", "1.0.0", null,
-                        new Contact("Musak", "https://twitter.com/musaki", null),null, null));
+                        new Contact("Musak Istvan", "https://twitter.com/musakistvan", null),null, null));
     }
 
 	public static void main(String[] args) {
