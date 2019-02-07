@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by musak on 2/5/19.
  */
-@FeignClient("GUESTSERVICES")
+@FeignClient(value = "GUESTSERVICES", fallback = GuestServiceFallbackImp.class)
 public interface GuestService {
 
     @RequestMapping(value="/guests", method= RequestMethod.GET)
